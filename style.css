@@ -1,15 +1,19 @@
-.body-image .card-img {
-  height: 100vh;
+.overlay {
   width: 100%;
+  height: 100vh;
+  background-image: url("img/first.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
-.welcome {
-  margin: 250px 0 0 50px;
+.intro-top {
+  margin-top: 40vh;
 }
 .article {
   display: block;
-  position: absolute;
   width: 100%;
-  margin: 90vh 0 0 0;
+  margin: 30vh 0 0 0;
   padding: 0;
   word-wrap: break-word;
 }
@@ -19,7 +23,7 @@
   text-align: center;
   margin: 0 15px;
 }
-article i {
+.fas {
   font-size: 22px;
 }
 .f-awesome1 {
@@ -52,48 +56,209 @@ article i {
   background-color: #fff;
 }
 .article h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #fff;
 }
 .article p {
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 15px;
   color: #fff;
 }
-.body-image {
-  margin-bottom: 15rem;
-}
-article:hover {
+.f-awesome1:hover {
   background-color: #fff;
   transition: all 0.7s ease-in-out;
 }
-article:hover .icon1 {
+.f-awesome2:hover {
+  background-color: #fff;
+  transition: all 0.7s ease-in-out;
+}
+.f-awesome3:hover {
+  background-color: #fff;
+  transition: all 0.7s ease-in-out;
+}
+.f-awesome4:hover {
+  background-color: #fff;
+  transition: all 0.7s ease-in-out;
+}
+.block:hover .icon1 {
   color: #fff;
   background-color: #97a9bd;
 }
-article:hover .icon2 {
+.block:hover .icon2 {
   color: #fff;
   background-color: #a197bd;
 }
-article:hover .icon3 {
+.block:hover .icon3 {
   color: #fff;
   background-color: #bda697;
 }
-article:hover .icon4 {
+.block:hover .icon4 {
   color: #fff;
   background-color: #97bdab;
 }
-article:hover h3 {
+.block:hover h3 {
   color: #353535;
   transition: all 0.7s ease-in-out;
 }
-article:hover p {
+.block:hover p {
   color: #353535;
   transition: all 1s ease-in-out;
 }
-article:hover,
+.block:hover,
 *::before,
 *::after {
   transition: all 1s ease-in-out;
+}
+
+/* Gallery */
+.gallery {
+  width: 100%;
+  margin-top: 18rem;
+}
+.footer-name {
+  color: rgb(75, 75, 75);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* Review */
+.review {
+  margin-top: 6rem;
+  background-image: url("./img/middle.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 3rem;
+}
+.review .f-awesome {
+  width: 25%;
+  height: 250px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 30%);
+}
+.sectiontitle {
+  text-align: center;
+  color: #97a9bd;
+  padding-bottom: 1rem;
+}
+.sectiontitle p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.sectiontitle h5 {
+  font-size: 1.5rem;
+}
+.review .block1 {
+  margin-left: 10%;
+}
+.review .block2 {
+  margin-left: 3%;
+}
+.padd {
+  padding: 20px;
+}
+.review1,
+.review2,
+.review3,
+.review4,
+.review5,
+.review6 {
+  color: #fff;
+  background-color: #97a9bd;
+}
+.review article:hover {
+  background-color: #97a9bd;
+}
+.review article:hover i {
+  background-color: #fff;
+  color: #97a9bd;
+}
+.text-hover {
+  color: #97a9bd;
+}
+.review article:hover .text-hover {
+  color: #fff;
+}
+
+/* Circle Progress Bar */
+
+.circle-chart {
+  width: 150px;
+  height: 150px;
+}
+
+.circle-chart__circle {
+  stroke: #00acc1;
+  stroke-width: 2;
+  stroke-linecap: square;
+  fill: none;
+  animation: circle-chart-fill 2s reverse; /* 1 */
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+/**
+ * 1. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 2. Scaling mirrors the circle to make the stroke move right
+ *    to mark a positive chart value.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround.
+ */
+
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1, -1); /* 1, 2, 3 */
+}
+
+.circle-chart__background {
+  stroke: #efefef;
+  stroke-width: 2;
+  fill: none;
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__percent {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 8px;
+}
+
+.circle-chart__subline {
+  alignment-baseline: central;
+  text-anchor: middle;
+  font-size: 3px;
+}
+
+.success-stroke {
+  stroke: #00c851;
+}
+
+.warning-stroke {
+  stroke: #ffbb33;
+}
+
+.danger-stroke {
+  stroke: #ff4444;
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
