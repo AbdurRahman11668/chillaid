@@ -25,16 +25,16 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#pages" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pages
+                  Page
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Page1</a></li>
-                  <li><a class="dropdown-item" href="#">Page2</a></li>
-                  <li><a class="dropdown-item" href="#">Page3</a></li>
-                  <li><a class="dropdown-item" href="#">Page4</a></li>
-                  <li><a class="dropdown-item" href="#">Page5</a></li>
+                  <li><a class="dropdown-item" href="#page1">Page1</a></li>
+                  <li><a class="dropdown-item" href="#page2">Page2</a></li>
+                  <li><a class="dropdown-item" href="#page3">Page3</a></li>
+                  <li><a class="dropdown-item" href="#page4">percentage</a></li>
+                  <li><a class="dropdown-item" href="#page5">Page5</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#samething-else">Something else here</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -51,13 +51,13 @@
                 </ul>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#about-us" tabindex="-1" aria-disabled="true">About Us</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#review">Review</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About Us</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact us</a>
-                </li>
+                <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact us</a>
               </li>
             </ul>
           </div>
@@ -69,38 +69,40 @@
         <div class="intro d-flex justify-content-center align-items-center text-center">
           <article class="intro-top">
             <h1>Shop Airline Fears</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur magni ad soluta quas delectus?</p>
+            <p class="pt-2 pb-4">Lorem ipsum dolor sit amet Lorem, ipsum dolor Lorem, ipsum.. consectetur adipisicing elit. <br>Quibusdam consectetur magni ad soluta quas delectus?</p>
             <button class="btn fw-bold bg-warning">Click Here</button>
           </article>
         </div>   
       
         <!-- ARTICLES -->
-        <div class="article d-flex justify-content-around">
-          <article class="f-awesome1 block">
-            <i class="fas fa-hand-rock rounded-circle p-3 mb-3 icon1"></i>
-            <h3 class="mb-4">Feugiat Fermentum</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, error.</p>
-          </article>
-          <article class="f-awesome2 block">
-            <i class="fas fa-dove rounded-circle p-3 mb-3 icon2"></i>
-            <h3 class="mb-4">Nam Layer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nobis?</p>
-          </article>
-          <article class="f-awesome3 block">
-            <i class="fas fa-history rounded-circle p-3 mb-3 icon3"></i>
-            <h3 class="mb-4">Largest Real Estate</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore.</p>
-          </article>
-          <article class="f-awesome4 block">
-            <i class="fas fa-heartbeat rounded-circle p-3 mb-3 icon4"></i>
-            <h3 class="mb-4">Textile Element</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui!</p>
-          </article>
+        <div class="container" id="page1">
+          <div class="article d-flex justify-content-around">
+            <article class="f-awesome1 block">
+              <i class="fas fa-hand-rock rounded-circle p-3 mb-3 icon1"></i>
+              <h3 class="mb-4 hover-text1">Feugiat Fermentum</h3>
+              <p class="hover-text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, error.</p>
+            </article>
+            <article class="f-awesome2 block">
+              <i class="fas fa-dove rounded-circle p-3 mb-3 icon2"></i>
+              <h3 class="mb-4 hover-text2">Nam Layer</h3>
+              <p class="hover-text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nobis?</p>
+            </article>
+            <article class="f-awesome3 block">
+              <i class="fas fa-history rounded-circle p-3 mb-3 icon3"></i>
+              <h3 class="mb-4 hover-text3">Largest Real Estate</h3>
+              <p class="hover-text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore.</p>
+            </article>
+            <article class="f-awesome4 block">
+              <i class="fas fa-heartbeat rounded-circle p-3 mb-3 icon4"></i>
+              <h3 class="mb-4 hover-text4">Textile Element</h3>
+              <p class="hover-text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui!</p>
+            </article>
+          </div>
         </div>
-      </div>
+        </div>
 
-      <!-- Gallery -->
-      <div class="row row-cols-2 row-cols-md-3 g-4 gallery d-flex justify-content-center align-items-center">
+      <!-- Other Items -->
+      <div class="row row-cols-2 row-cols-md-3 g-4 other-items d-flex justify-content-center align-items-center" id="page2">
         <div class="col">
           <div class="card h-100">
             <img src="img/1.jpg" class="card-img-top" alt="...">
@@ -119,50 +121,50 @@
         </div>
       </div>
 
-      <!-- Review -->
-      <div class="review row">
+      <!-- Notices -->
+      <div class="notice row" id="page3">
         <div class="sectiontitle">
           <p class="m-1">Lorem ipsum dolor sit amet.</p>
           <h5 class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
         </div>
         <article class="col-3 f-awesome block block1 mb-0">
           <div class="padd">
-            <i class="fas fa-bullhorn rounded-circle review1 p-3 mb-3"></i>
+            <i class="fas fa-bullhorn rounded-circle notice1 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">Pulls Rays</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ipsum.</p>
           </div>
         </article>
         <article class="col-3 f-awesome block block2">
           <div class="padd">
-            <i class="fas fa-dove rounded-circle review2 p-3 mb-3"></i>
+            <i class="fas fa-dove rounded-circle notice2 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">Big Parturient</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, nobis?</p>
           </div>
         </article>
         <article class="col-3 f-awesome block block2">
           <div class="padd">
-            <i class="fas fa-history rounded-circle review3 p-3 mb-3"></i>
+            <i class="fas fa-history rounded-circle notice3 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">Instantly Jasmine</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, inventore.</p>
           </div>
         </article>
         <article class="col-3 f-awesome block block1 prob">
           <div class="padd">
-            <i class="fas fa-heartbeat rounded-circle review4 p-3 mb-3"></i>
+            <i class="fas fa-heartbeat rounded-circle notice4 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">Phasellus Ullamcorper Neque</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui!</p>
           </div>
         </article>
         <article class="col-3 f-awesome block block2 prob2">
           <div class="padd">
-            <i class="fas fa-heartbeat rounded-circle review5 p-3 mb-3"></i>
+            <i class="fas fa-heartbeat rounded-circle notice5 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">Bananas There Was No Pool</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui!</p>
           </div>
         </article>
         <article class="col-3 f-awesome block block2">
           <div class="padd">
-            <i class="fas fa-heartbeat rounded-circle review6 p-3 mb-3"></i>
+            <i class="fas fa-heartbeat rounded-circle notice6 p-3 mb-3"></i>
             <h3 class="text-hover mb-4">A Weekend Chat</h3>
             <p class="text-hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui!</p>
           </div>
@@ -171,20 +173,93 @@
     </div>
 
     <!-- Circle Progress Bar -->
-    <div class="area">
+    <div class="area circle" id="page4">
       <div class="container">
-        <div class="row">
-          <div class="col-3">
-            <div class="circlechart" data-percentage="25">Html</div>
+        <div class="sectiontitle progress-title">
+          <p class="m-1">Lorem ipsum dolor sit amet.</p>
+          <h5 class="m-1">Lorem ipsum dolor sitingukad</h5>
+        </div>
+        <div class="row text-sm-center">
+          <div class="col-6 col-sm-6 col-lg-3 pb-5 pb-sm-5">
+            <div class="circlechart" data-percentage="25">AIRLINE</div>
           </div>
-          <div class="col-3">
-            <div class="circlechart" data-percentage="50">CSS</div>
+          <div class="col-6 col-sm-6 col-lg-3 pb-5 pb-sm-5">
+            <div class="circlechart" data-percentage="50">SAUCE</div>
           </div>
-          <div class="col-3">
-            <div class="circlechart" data-percentage="75">Jq</div>
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="circlechart" data-percentage="75">MCQUEEn</div>
           </div>
-          <div class="col-3">
-            <div class="circlechart" data-percentage="100">Jq</div>
+          <div class="col-6 col-sm-6 col-lg-3">
+            <div class="circlechart" data-percentage="100">STERILIZED</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GALLERY -->
+    <section class="gallery text-center" id="about-us">
+      <div class="container">
+        <div class="sectiontitle progress-title">
+          <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, at?</p>
+          <h5 class="m-1">Lorem ipsum dolor sitingukad</h5>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/person1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Harry</h4>
+                <p class="card-text">Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/person2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">John</h4>
+                <p class="card-text">Co-Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/person3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h4 class="card-title">Ahnaf</h4>
+                <p class="card-text">General Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- REVIEW -->
+    <div class="review">
+      <div class="container">
+        <div class="sectiontitle progress-title">
+          <p class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, at?</p>
+          <h5 class="m-1">Lorem ipsum dolor sitingukad</h5>
+        </div>
+        <div class="row review-img">
+          <div class="col-6 img-des">
+            <div class="small-des">
+              <img src="img/review1.jpg" alt="" class="review1 rounded-circle">
+              <div>
+                <h4>Lary</h4>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <p class="main-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium possimus nam odio laborum illum architecto neque facilis reprehenderit officiis blanditiis.</p>
+          </div>
+          <div class="col-6 img-des">
+            <div class="small-des">
+              <img src="img/review2.jpg" alt="" class="review1 rounded-circle">
+              <div>
+                <h4>Smith</h4>
+                <p>Lorem, ipsum.</p>
+              </div>
+            </div>
+            <p class="main-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa itaque praesentium molestiae! Odio in, deleniti animi autem ipsum consectetur vero?</p>
           </div>
         </div>
       </div>
